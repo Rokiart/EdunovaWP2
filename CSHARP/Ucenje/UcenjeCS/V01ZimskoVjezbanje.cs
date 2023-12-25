@@ -104,19 +104,28 @@ namespace UcenjeCS
             //*********************************************************************
 
 
-
         
-            Console.WriteLine("Unesi broj od 1 do 100 ?");
-            int i = 0;
-            int b = 0;
-            i += int.Parse(Console.ReadLine());
-            b = b+1;
-
-            Console.WriteLine(i);
-            Console.WriteLine("broj pokušaja = "+ b);
-            for (i=0)
+            //var i = 0;
+            //int c = 1;
 
 
+            //Console.WriteLine("Upište broj 1-100");
+            //var b = Console.ReadLine();
+
+
+            //while (int.TryParse(b, out i) && i > 0 && i < 100)
+            //{
+
+            //    Console.WriteLine("nastavite s upisom");
+            //    c++;
+            //    b = Console.ReadLine();
+            //    Console.WriteLine($"pokusaj " + c);
+            //}
+
+            //Console.WriteLine($"Upisali ste krivi broj {i} imali ste " + c +" pokušaja !");
+
+
+            //********************************************************************************
         }
     }
 }
