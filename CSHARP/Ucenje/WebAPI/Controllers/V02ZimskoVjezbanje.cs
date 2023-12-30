@@ -113,9 +113,55 @@ namespace WebAPI.Controllers
             return x;
         }
         //****************************************************************************
+        // Ruta prima dva parametra koji su cijeli brojevi i vraća zbroj svih brojeva između primljenih brojeva
+        [HttpGet]
+        [Route("zad8")]
+        public int Zad8(int pb, int db)
+        // pb-prvi broj , db-drugi broj
+        {
+            int x = 0;
+
+            for (int i = pb; i <= db; i ++)
+            {
+                x += i;
+            }
+            return x;
+        }
+        //*****************************************************************************
+        //Ruta prima dva parametra koji su cijeli brojevi i vraća zbroj svih brojeva između primljenih brojeva koji su cjelobrojno djeljivi s 3
+
+        [HttpPost]
+        [Route("zad9")]
+        public int Zad9(int pb, int db)
+        {
+            int x = 0;
+
+            for (int i = pb; i <= db; i++)
+            {
+               x= x += (i / 3)*3;
 
 
+            }
+            return x;
+        }
+        //*****************************************************************************
+        //Ruta prima dva parametra koji su cijeli brojevi i vraća zbroj svih brojeva između primljenih brojeva koji su cjelobrojno djeljivi s 3 i 5
+        [HttpPost]
+        [Route("zad10")]
+        public int Zad10(int pb, int db)
+        {
+            int x = 0;
 
+            for (int i = pb; i <= db; i++)
+            {
+                int y = x += i;
+                y
+               
+
+
+            }
+            return x;
+        }
     }
 
 
