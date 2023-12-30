@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.DataProtection.KeyManagement.Internal;
+using Microsoft.AspNetCore.Mvc;
 using System.Reflection.Metadata.Ecma335;
 
 namespace WebAPI.Controllers
@@ -23,13 +24,49 @@ namespace WebAPI.Controllers
           
 
         }
-
+//*************************************************************************
         [HttpGet]
         [Route("zad2")]
+        public int Zad2()
+        {
+            int x = 0;
 
+            for (int i = 0; i <= 100; i++)
+            {
+               x += i;
+            }
 
+            return x;
+        }
+        //**************************************************************************
+        [HttpPost]
+        [Route("zad3")]
+        public int[] Zad3()
+        {
+            int[] x = new int[(57 % 2)];
+            int unosx = 0;
+            for (int i = 0; i <= 57; i += 2)
+            {
+                x[unosx] = i;
+                unosx++;
+            }
+            return x;
+        }
+        //**************************************************************************
+        //[HttpPost]
+        //[Route("Zad4")]
 
-
+        //public int[] Zad4()
+        //{
+        //    int[] NizParnihBrojeva = new int[(58 / 2)];
+        //    int index = 0;
+        //    for (int i = 0; i <= 57; i += 2)
+        //    {
+        //        NizParnihBrojeva[index] = i;
+        //        index++;
+        //    }
+        //    return NizParnihBrojeva;
+        //}
 
     }
 
