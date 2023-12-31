@@ -134,15 +134,15 @@ namespace WebAPI.Controllers
         [Route("zad9")]
         public int Zad9(int pb, int db)
         {
-            int x = 0;
-
-            for (int i = pb; i <= db; i++)
+            int sum = 0;
+            for (int broj = pb; broj < db; broj++)
             {
-               x= x += (i / 3)*3;
-
-
+                if (broj % 3 == 0)
+                {
+                    sum = sum + broj;
+                }
             }
-            return x;
+            return sum;
         }
         //*****************************************************************************
         //Ruta prima dva parametra koji su cijeli brojevi i vraća zbroj svih brojeva između primljenih brojeva koji su cjelobrojno djeljivi s 3 i 5
@@ -150,17 +150,15 @@ namespace WebAPI.Controllers
         [Route("zad10")]
         public int Zad10(int pb, int db)
         {
-            int x = 0;
-
-            for (int i = pb; i <= db; i++)
+            int sum = 0;
+            for (int broj = pb; broj < db; broj++)
             {
-                int y = x += i;
-                y
-               
-
-
+                if ((broj % 3 == 0) && (broj % 5 ==0))
+                {
+                    sum = sum + broj;
+                }
             }
-            return x;
+            return sum;
         }
     }
 
