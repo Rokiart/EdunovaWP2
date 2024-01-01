@@ -9,7 +9,7 @@ namespace UcenjeCS
 {
     internal class V01ZimskoVjezbanje
     {
-       // public static void Izvedi()
+         public static void Izvedi()
 
         //Razmjena novca
         //{
@@ -48,7 +48,7 @@ namespace UcenjeCS
         //    }
         //}
         //************************************************************************
-       
+
         //{
 
         //Random broj = new Random();
@@ -64,39 +64,7 @@ namespace UcenjeCS
         //}
 
         //************************************************************************
-                       // neradi
-        // int b;
-
-        // b = 1;
-        // var i = new Random();
-        //for (int ctr = 0; ctr <= 200; ctr++) ;
-        // b = b++;
-        // Console.WriteLine("{0,15:N0}", i.Next(200), " Manji je od 100 " + " , " + "Broj pokušaja = " + b);
-
-
-        //while (i <= 100)
-        //{
-        //    Console.WriteLine("{0,8:N0}",i.Next() , " Manji je od 100 " + " , " + "Broj pokušaja = " + b);
-        //    b = b++;
-
-        //    {
-
-
-        //        break;
-
-
-        //    }
-
-        //}
-
-        //while (i >= 100)
-        //{
-        //    Console.Write(i + " Veci je od 100  " + " ,  Broj pokušaja = " + b);
-        //    {
-        //        break;
-        //    }
-
-        //}
+      
 
         //********************************************************************
         //var rand = new Random();
@@ -105,30 +73,34 @@ namespace UcenjeCS
         //    Console.Write("{0,8:N0}", rand.Next(101));
         //Console.WriteLine();
         //*********************************************************************
+    //    { 
 
 
-
-        //var i = 0;
-        //int c = 1;
-
-
-        //Console.WriteLine("Upište broj 1-100");
-        //var b = Console.ReadLine();
+    //    var i = 0;
+    //    int c = 1;
 
 
-        //while (int.TryParse(b, out i) && i > 0 && i < 100)
-        //{
+    //    Console.WriteLine("Upište broj 1-100");
+    //    var b = Console.ReadLine();
 
-        //    Console.WriteLine("nastavite s upisom");
-        //    c++;
-        //    b = Console.ReadLine();
-        //    Console.WriteLine($"pokusaj " + c);
-        //}
 
-        //Console.WriteLine($"Upisali ste krivi broj {i} imali ste " + c +" pokušaja !");
+    //    while (int.TryParse(b, out i) && i > 0 && i< 100)
+    //    {
 
+    //        Console.WriteLine("nastavite s upisom");
+    //        c++;
+    //        b = Console.ReadLine();
+    //        Console.WriteLine($"pokusaj " + c);
+    //    }
+
+    //Console.WriteLine($"Upisali ste krivi broj {i} imali ste " + c +" pokušaja !");
+    //    }
 
         //********************************************************************************
+
+
+
+
     }
 }
 
