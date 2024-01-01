@@ -11,17 +11,17 @@ namespace WebAPI.Controllers
         [HttpGet]
         [Route("zad1")]
         public int[] Zad1(int x)
-         //ruta prima jedan parametar te vraca brojeve od 0 do 100!  
+        //ruta prima jedan parametar te vraca brojeve od 0 do 100!  
         {
             x = 100;
             int[] niz = new int[x];
-            for(int i=0;i<x;i++)
+            for (int i = 0; i < x; i++)
             {
 
-               niz[i]= i+1;
-            }  return niz;
-           
-          
+                niz[i] = i + 1;
+            } return niz;
+
+
 
         }
         //*************************************************************************
@@ -34,7 +34,7 @@ namespace WebAPI.Controllers
 
             for (int i = 0; i <= 100; i++)
             {
-               x += i;
+                x += i;
             }
 
             return x;
@@ -49,7 +49,7 @@ namespace WebAPI.Controllers
             int unosx = 0;
             for (int i = 0; i <= 57; i += 2)
             {
-                x [unosx] = i;
+                x[unosx] = i;
                 unosx++;
             }
             return x;
@@ -73,7 +73,7 @@ namespace WebAPI.Controllers
         //Ruta prima jedan parametar koji je cijli broj i vraća zbroj svih brojava od 1 do primljenog broja
         [HttpGet]
         [Route("zad5")]
-        public int Zad5 (int zbroj)
+        public int Zad5(int zbroj)
         {
             int suma = 0;
             for (int i = 1; i <= zbroj; i++)
@@ -86,8 +86,8 @@ namespace WebAPI.Controllers
         // Ruta prima dva parametra koji su cijeli brojevi i vraća niz s svim parnim brojevima između primljenih brojeva
         [HttpGet]
         [Route("zad6")]
-        public int Zad6(int pb,int db)
-            // pb-prvi broj , db-drugi broj
+        public int Zad6(int pb, int db)
+        // pb-prvi broj , db-drugi broj
         {
             int x = 0;
 
@@ -101,13 +101,13 @@ namespace WebAPI.Controllers
         //Ruta prima dva parametra koji su cijeli brojevi i vraća niz s svim neparnim brojevima između primljenih brojeva
         [HttpPost]
         [Route("zad7")]
-        public int[] Zad7(int pb,int db)
+        public int[] Zad7(int pb, int db)
         {
             int[] x = new int[(db / pb)];
             int unosx = 0;
             for (int i = pb; i <= db; i += 2)
             {
-                x[unosx] = i+1;
+                x[unosx] = i + 1;
                 unosx++;
             }
             return x;
@@ -121,7 +121,7 @@ namespace WebAPI.Controllers
         {
             int x = 0;
 
-            for (int i = pb; i <= db; i ++)
+            for (int i = pb; i <= db; i++)
             {
                 x += i;
             }
@@ -153,14 +153,32 @@ namespace WebAPI.Controllers
             int sum = 0;
             for (int broj = pb; broj < db; broj++)
             {
-                if ((broj % 3 == 0) && (broj % 5 ==0))
+                if ((broj % 3 == 0) && (broj % 5 == 0))
                 {
                     sum = sum + broj;
                 }
             }
             return sum;
         }
+        //*****************************************************************************
+        // Ruta prima dva parametra koji su cijeli brojevi i vraća dvodimenzionalni niz (matricu) koja sadrži tablicu množenja za dva primljena broja
+        //[HttpPost]
+        //[Route("zad11")]
+        //public int Zad11(tablica[pb, db])
+        //{
+        //    int pb = 0;
+        //    int db = 0;
+        //    int x = 0;
+        //    {
+        //        x = pb * db;
+        //    }
+        //}return ;
+        //******************************************************************************
+        
+
+
+    
     }
 
-
+   
 }
